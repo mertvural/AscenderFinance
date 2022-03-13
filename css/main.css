@@ -126,7 +126,7 @@ filter:drop-shadow(0 3px 20px rgba(0, 77, 154, .6))}
 .stepper-item:first-child::before {content: "";left:0}
 .stepper-item.active:last-child::after {border-color: #004D9A;}
 .stepper-item:last-child::after {content: "";border-color: #C8DAE6;left:0}
-.step-list-area .list {background-color: #DDECFC;border-radius: 30px;padding: 3rem 2rem calc(1rem + 50px) 2rem;text-align: center;position: relative;margin: 20px;}
+.step-list-area .list {cursor:w-resize;background-color: #DDECFC;border-radius: 30px;padding: 3rem 2rem calc(1rem + 50px) 2rem;text-align: center;position: relative;margin: 20px;}
 .step-list-area .icon::before {background-size: contain;}
 .step-list-area .icon.banknotes::before {width: 70px;height: 55px;}
 .step-list-area .icon.people::before {width: 48px;height: 48px;}
