@@ -58,7 +58,7 @@ $(function () {
             slidesToShow: 5,
             speed: 300,
             arrows: false,
-            infinite: true,
+            infinite: false,
             responsive: [
                 {
                     breakpoint: 768,
