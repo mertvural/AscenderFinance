@@ -99,7 +99,7 @@ $(function () {
     })(),
 
     (function() {
-alert("1213123")
+
         var pyramidPath = $(".pyramid .path");
 
         pyramidPath.mouseenter(function() {
