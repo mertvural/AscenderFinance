@@ -30,96 +30,97 @@ $(function () {
     })(),
 
 
-    (function () {
-        AOS.init();
-    })(),
+        (function () {
+            AOS.init();
+        })(),
 
 
-    (function () {
-        var stepperItem = $(".stepper-item"),
-            isSlide = true,
-            listIndex,
-            stepID;
+        (function () {
+            var stepperItem = $(".stepper-item"),
+                isSlide = true,
+                listIndex,
+                stepID;
 
-        stepperItem.on("click", function () {
-            if (isSlide) {
-                stepID = false;
-                $(this).addClass("active").prevAll().addClass("active");
-                $(this).nextAll().removeClass("active")
-                stepID = $(this).data("stepid");
-                listIndex = filterSlick(".step-list-area .list:not(.slick-cloned)", stepID);
-                slickGoTo(".step-list-area", listIndex)
+            stepperItem.on("click", function () {
+                var $this = $(this);
+                if (isSlide) {
+                    stepID = false;
+                    $this.addClass("active").prevAll().addClass("active");
+                    $this.nextAll().removeClass("active")
+                    stepID = $this.data("stepid");
+                    listIndex = filterSlick(".step-list-area .list:not(.slick-cloned)", stepID);
+                    slickGoTo(".step-list-area", listIndex)
+                }
+
+            });
+
+            $('.step-list-area').slick({
+                centerMode: true,
+                slidesToShow: 5,
+                speed: 300,
+                arrows: false,
+                infinite: false,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            centerMode: true,
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            centerMode: true,
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            }).on('afterChange', function (event, slick, currentSlide, nextSlide) {
+                stepperItemActive(".stepper-item", currentSlide)
+            });
+
+            function filterSlick(target, index) {
+                return $(target).filter("[data-listid=" + index + "]").data("slick-index");
             }
 
-        });
+            function slickGoTo(target, index) {
+                isSlide = false
+                $(target).slick("slickGoTo", index);
+                setTimeout(() => {
+                    isSlide = true
+                }, 300);
+            }
 
-        $('.step-list-area').slick({
-            centerMode: true,
-            slidesToShow: 5,
-            speed: 300,
-            arrows: false,
-            infinite: false,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        centerMode: true,
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        centerMode: true,
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        }).on('afterChange', function (event, slick, currentSlide, nextSlide) {
-            stepperItemActive(".stepper-item", currentSlide)
-        });
+            function stepperItemActive(target, index) {
 
-        function filterSlick(target, index) {
-            return $(target).filter("[data-listid=" + index + "]").data("slick-index");
-        }
+                $(target).filter("[data-stepid=" + index + "]").addClass("active").prevAll().addClass("active").end().nextAll().removeClass("active");
+            }
 
-        function slickGoTo(target, index) {
-            isSlide = false
-            $(target).slick("slickGoTo", index);
-            setTimeout(() => {
-                isSlide = true
-            }, 300);
-        }
+        })(),
 
-        function stepperItemActive(target, index) {
+        (function () {
 
-            $(target).filter("[data-stepid=" + index + "]").addClass("active").prevAll().addClass("active").end().nextAll().removeClass("active");
-        }
+            var pyramidPath = $(".pyramid .path");
 
-    })(),
-
-    (function() {
-
-        var pyramidPath = $(".pyramid .path");
-
-        pyramidPath.mouseenter(function() {
-            pyramidPath.removeClass("active deactive")
-          $(this).addClass("active").siblings().addClass("deactive")            
-        }).mouseleave(function() {
-            pyramidPath.removeClass("active deactive")
-        }).on("click", function() {
-            var index = $(this).data("index");
-            sliderChange(".slider .slider-item",index)
-        })
+            pyramidPath.mouseenter(function () {
+                pyramidPath.removeClass("active deactive")
+                $(this).addClass("active").siblings().addClass("deactive")
+            }).mouseleave(function () {
+                pyramidPath.removeClass("active deactive")
+            }).on("click", function () {
+                var index = $(this).data("index");
+                sliderChange(".slider .slider-item", index)
+            })
 
 
-        
-        function sliderChange(target, index){
-            $(target).hide()
-            $(target).filter("[data-slideItem="+index+"]").fadeIn()                    
-        } 
 
-    })()
+            function sliderChange(target, index) {
+                $(target).hide()
+                $(target).filter("[data-slideItem=" + index + "]").fadeIn()
+            }
+
+        })()
 
 
 })//jQuery
