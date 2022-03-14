@@ -198,13 +198,14 @@ footer .phone::before {width: 33px;height: 31px;background: url("../images/icon-
 footer .phone::before, footer .mail::before {content: "";display: block;margin-right: 10px;}
 footer a:hover {opacity: .7;}
 .pyramid {position: relative;width: 741px;height: 752px;cursor: pointer;}
-.pyramid .path {position: absolute;margin: auto;left:0;right: 0;text-align: center;}
+.pyramid .path {position: absolute;margin: auto;left:0;right: 0;text-align: center;max-width: fit-content;}
 .pyramid .path1 {top:0}
 .pyramid .path2 {top:214px;left:-1px}
 .pyramid .path3 {top: 318px;left: 35px;}
 .pyramid .path4 {top: 425px;left: -77px;}
 .pyramid .path5 {top: 569px;left: -72px;}
-.pyramid path {filter: opacity(.6);}
+.pyramid path {filter: opacity(.6)}
+.pyramid * {transition: all .4s ease-out}
 .pyramid .deactive path {fill:#313E53;}
 .pyramid .active path, .pyramid .deactive path {filter: opacity(1);}
 .pyramid svg {filter: drop-shadow(0px -17px 12px rgba(255, 255, 255, .3));}
