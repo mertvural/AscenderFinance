@@ -250,7 +250,7 @@ html {font-size: 12px;}
 .boxes .box .icon::before {background-size: 70%;}
 .slider .slider-item h2 {font-size: 1.8rem;}
 .slider .slider-item p {font-size: 1rem;}
-.logo {max-width: 150px;}
+
 }
 
 @media (max-width:991px) {
@@ -278,6 +278,7 @@ background-color: #004D9A;height: 100%;z-index: 90;justify-content:flex-start;pa
 .benefits .icon::before {background-size: 30px;}
 .step-list-area .list .icon {width: 70px;height: 70px;}
 .step-list-area .icon::before {background-size: 60%;}
+.step-list-area .slick-list {padding-bottom: 50px !important;}
 
 }
 
