@@ -279,7 +279,7 @@ background-color: #004D9A;height: 100%;z-index: 90;justify-content:flex-start;pa
 .step-list-area .list .icon {width: 70px;height: 70px;}
 .step-list-area .icon::before {background-size: 60%;}
 .step-list-area .slick-list {padding-bottom: 50px !important;}
-.invest-now, .question-area-group, .team, .benefits {padding: 2rem 0;}
+.invest-now, .question-area-group, .team, .benefits, .raising-with-ascender .bg {padding: 2rem 0;}
 
 
 }
