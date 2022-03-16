@@ -29,7 +29,7 @@ font-size: 1rem;color:#fff}
 .text-bg {background: rgba(1, 73, 146, .5);color: #2CB6FE;display: inline-block;padding: 5px 15px;line-height: 1.1;}
 h3 {font-size: 2.5rem;}
 h4 {font-size: 2.0625rem;}
-.what-is {background: url("../images/map.png") no-repeat center center;padding: calc(55px + 4.5rem) 0;overflow: hidden;}
+.what-is {background: url("../images/map.png") no-repeat center center;padding: calc(55px + 4.5rem) 0;overflow: hidden;background-size: contain;}
 .what-is p {color:#879299}
 .circle {width: 489px;height: 489px;background-color: #fff;border-radius: 50%;border:2px dashed #004D9A;filter:drop-shadow(0 0 20px rgba(0, 77, 154, .4));
 display: flex;align-items: center;justify-content: center;position: relative;margin: 0 auto;animation: rotating 20s linear infinite;}
