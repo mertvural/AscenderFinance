@@ -55,10 +55,10 @@ $(function () {
 
             });
 
-            stepBoxItem.on("click", function() {
-                
+            stepBoxItem.on("click", function () {
+
                 listIndex = $(this).data("listid")
-               
+
                 slickGoTo(".step-list-area", listIndex)
             })
 
@@ -108,8 +108,8 @@ $(function () {
         })(),
 
         (function () {
-            var pyramid = $(".pyramid"),
-                pyramidPath = $(".pyramid .path");
+
+            var pyramidPath = $(".pyramid .path");
 
             pyramidPath.mouseenter(function () {
                 pyramidPath.removeClass("active deactive")
@@ -117,15 +117,12 @@ $(function () {
                 var index = $(this).data("index");
                 sliderChange(".slider .slider-item", index)
             }).mouseleave(function () {
-                pyramidPath.removeClass("active deactive")               
-            });
-
-            pyramid.mouseleave(function() {
-                sliderChange(".slider .slider-item")
-            })
+                pyramidPath.removeClass("active deactive");
+                sliderChange(".slider .slider-item");
+            });           
 
             function sliderChange(target, index) {
-                if(!index) {
+                if (!index) {
                     $(target).hide().siblings().filter(".slider-main").stop().fadeIn()
                     return
                 }
