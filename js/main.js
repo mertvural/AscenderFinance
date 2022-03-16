@@ -126,9 +126,15 @@ $(function () {
 
     //menu
     (function () {
-        var mobilMenu = $("#mobil-menu");
+        var mobilMenu = $("#mobil-menu"),
+            menuLink = $(".site-menu a");
+
         mobilMenu.on("click", function () {
             $("body").toggleClass("opened-mobil-menu")
+        })
+
+        menuLink.on("click", function() {
+            $("body").removeClass("opened-mobil-menu");
         })
 
     })()
