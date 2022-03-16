@@ -264,9 +264,9 @@ html {font-size: 12px;}
 .logo {margin-left: -30px;}
 .opened-mobil-menu .logo {margin-left: 0;}
 .site-menu {flex-direction: column;align-items: flex-start;position: fixed;top:0;left: 0;width: 240px;transform: translateX(-240px);transition: transform .3s ease;
-background-color: #004D9A;height: 100%;z-index: 90;justify-content:flex-start;padding-top: 50px;}
+background-color: #004D9A;height: 100%;z-index: 90;justify-content:flex-start;padding-top: 60px;}
 .opened-mobil-menu .site-menu {transform: translateX(0);box-shadow: 16px 0 32px #08152a;}
-.opened-mobil-menu #mobil-menu {position: fixed;top:22px}
+.opened-mobil-menu #mobil-menu {position: fixed;top:26px}
 .site-menu a:not(.btn) {padding: 2rem 0;width: calc(100% - 1rem);font-size: 1.1rem;}
 .site-menu a.btn {background: #08152a;}
 .form .form-control {height: 50px;}
