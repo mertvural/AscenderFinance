@@ -271,6 +271,11 @@ background-color: #004D9A;height: 100%;z-index: 90;justify-content:flex-start;pa
 .form .btn-arrow {width: 30px;height: 30px;}
 .question-area-group .title::after {width: 20px;height: 16px;background-size: 20px;}
 .question-area-group .question.active .title::after {background-position: 5px -22px;}
+.what-is {padding: 2rem 0 3rem 0;}
+.benefits .icon {width: 44px;height: 44px;}
+.benefits .icon::before {background-size: 30px;}
+.step-list-area .list .icon {width: 70px;height: 70px;}
+.step-list-area .icon::before {background-size: 60%;}
 
 }
 
