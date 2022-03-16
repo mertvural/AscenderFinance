@@ -259,7 +259,7 @@ html {font-size: 12px;}
 .pyramid-col {display: flex;flex-direction: column;align-items: center;}
 .pyramid {margin-top: -128px;}
 .slider-area > .container {min-height: inherit;}
-.boxes .box {max-width: 100%;}
+.boxes .box {max-width: 100%;margin-top: 4rem !important;}
 .boxes .box .inner {min-height: auto;padding-bottom: 30px;padding-top: 70px;}
 .logo {margin-left: -30px;}
 .opened-mobil-menu .logo {margin-left: 0;}
@@ -280,6 +280,7 @@ background-color: #004D9A;height: 100%;z-index: 90;justify-content:flex-start;pa
 .step-list-area .icon::before {background-size: 60%;}
 .step-list-area .slick-list {padding-bottom: 50px !important;}
 .invest-now, .question-area-group, .team, .benefits {padding: 2rem 0;}
+
 
 }
 
