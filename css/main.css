@@ -186,7 +186,7 @@ footer .social {display: flex;align-items: center;justify-content: space-between
 footer .social a {text-indent: -9999px;width: 44px;height: 44px;background-repeat: no-repeat;display: block;font-size: 0;}
 footer .social a.linkedin {background-image: url("../images/icon-linkedin-circle.png");}
 footer .social a.facebook {background-image: url("../images/icon-face-circle.png");}
-footer .social a.twitter {background-image: url("../images/icon-linkedin-circle.png");}
+footer .social a.twitter {background-image: url("../images/icon-twitter-circle.png");}
 footer h5 {font-size: 1.5rem;color:#fff;margin-bottom: 20px;}
 .form .form-control {border-radius: 11px;background-color: #08152A;border: 1px solid #1D4A94;height: 70px;color:#fff;padding:0 0 0 25px}
 .form {max-width: 374px;}
