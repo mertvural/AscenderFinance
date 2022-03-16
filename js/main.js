@@ -37,6 +37,7 @@ $(function () {
 
         (function () {
             var stepperItem = $(".stepper-item"),
+                stepBoxItem = $(".step-list-area .list"),
                 isSlide = true,
                 listIndex,
                 stepID;
@@ -53,6 +54,13 @@ $(function () {
                 }
 
             });
+
+            stepBoxItem.on("click", function() {
+                
+                listIndex = $(this).data("listid")
+               
+                slickGoTo(".step-list-area", listIndex)
+            })
 
             $('.step-list-area').slick({
                 centerMode: true,
@@ -100,24 +108,29 @@ $(function () {
         })(),
 
         (function () {
-
-            var pyramidPath = $(".pyramid .path");
+            var pyramid = $(".pyramid"),
+                pyramidPath = $(".pyramid .path");
 
             pyramidPath.mouseenter(function () {
                 pyramidPath.removeClass("active deactive")
                 $(this).addClass("active").siblings().addClass("deactive")
-            }).mouseleave(function () {
-                pyramidPath.removeClass("active deactive")
-            }).on("click", function () {
                 var index = $(this).data("index");
                 sliderChange(".slider .slider-item", index)
+            }).mouseleave(function () {
+                pyramidPath.removeClass("active deactive")               
+            });
+
+            pyramid.mouseleave(function() {
+                sliderChange(".slider .slider-item")
             })
 
-
-
             function sliderChange(target, index) {
+                if(!index) {
+                    $(target).hide().siblings().filter(".slider-main").stop().fadeIn()
+                    return
+                }
                 $(target).hide()
-                $(target).filter("[data-slideItem=" + index + "]").fadeIn()
+                $(target).filter("[data-slideItem=" + index + "]").stop().fadeIn()
             }
 
         })()
