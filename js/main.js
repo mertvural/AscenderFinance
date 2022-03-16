@@ -70,16 +70,9 @@ $(function () {
                 infinite: false,
                 responsive: [
                     {
-                        breakpoint: 768,
+                        breakpoint: 1200,
                         settings: {
-                            centerMode: true,
-                            slidesToShow: 3
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            centerMode: true,
+                            centerMode: false,
                             slidesToShow: 1
                         }
                     }
@@ -129,6 +122,14 @@ $(function () {
                 $(target).hide()
                 $(target).filter("[data-slideItem=" + index + "]").stop().fadeIn()
             }
+
+        })(),
+
+        (function() {
+            var mobilMenu = $("#mobil-menu");
+            mobilMenu.on("click", function() {
+                $("body").toggleClass("opened-mobil-menu")
+            })
 
         })()
 
