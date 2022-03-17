@@ -269,8 +269,9 @@ header .logo {width: 170px;}
 background-color: #004D9A;height: 100%;z-index: 90;justify-content:flex-start;padding-top: 60px;}
 .opened-mobil-menu .site-menu {transform: translateX(0);box-shadow: 16px 0 32px #08152a;}
 .opened-mobil-menu #mobil-menu {position: fixed;top:26px}
-.site-menu a:not(.btn) {padding: 2rem 0;width: calc(100% - 1rem);font-size: 1.1rem;}
+.site-menu a:not(.btn) {padding: 2rem 0;width: calc(100% - 1.5rem);font-size: 1.1rem;}
 .site-menu a.btn {background: #08152a;}
+.site-menu a {margin:0 1.5rem}
 .form .form-control {height: 50px;}
 .form .btn-arrow {width: 30px;height: 30px;}
 .question-area-group .title::after {width: 20px;height: 16px;background-size: 20px;}
