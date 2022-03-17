@@ -220,7 +220,7 @@ footer a:hover {opacity: .7;}
 .opened-mobil-menu #mobil-menu span:nth-child(1) { top: 9px; transform: rotate(135deg); }
 .opened-mobil-menu #mobil-menu span:nth-child(2) { opacity: 0; left: -60px; }
 .opened-mobil-menu #mobil-menu span:nth-child(3) { top: 9px; transform: rotate(-135deg); }
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {padding-left: 3vw;padding-right: 3vw}
+
 
 
 
@@ -258,7 +258,7 @@ header .logo {width: 170px;}
 
 
 .pyramid-col {display: flex;flex-direction: column;align-items: center;}
-.pyramid {margin-top: -128px;}
+.pyramid {margin-top: -128px;margin-left: 20px;}
 .slider-area > .container {min-height: inherit;}
 .boxes .box {max-width: 100%;margin-top: 4rem !important;}
 .boxes .box .inner {min-height: auto;padding-bottom: 30px;padding-top: 70px;}
@@ -315,7 +315,7 @@ footer .mail, footer .phone {justify-content: flex-start;}
 }
 
 
-@media (min-width: 1400px){
+@media (min-width: 1516px){
 
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {max-width: 1436px}
 
