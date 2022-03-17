@@ -185,7 +185,7 @@ footer .top-list a {color:#fff}
 footer .social {display: flex;align-items: center;justify-content: space-between;min-width: 170px;}
 footer .social a {text-indent: -9999px;width: 44px;height: 44px;background-repeat: no-repeat;display: block;font-size: 0;}
 footer .social a.linkedin {background-image: url("../images/icon-linkedin-circle.png");}
-footer .social a.facebook {background-image: url("../images/icon-face-circle.png");}
+footer .social a.medium {background-image: url("../images/icon-medium-circle.png");}
 footer .social a.twitter {background-image: url("../images/icon-twitter-circle.png");}
 footer h5 {font-size: 1.5rem;color:#fff;margin-bottom: 20px;}
 .form .form-control {border-radius: 11px;background-color: #08152A;border: 1px solid #1D4A94;height: 70px;color:#fff;padding:0 0 0 25px}
@@ -193,8 +193,8 @@ footer h5 {font-size: 1.5rem;color:#fff;margin-bottom: 20px;}
 .form .form-control::placeholder {color:#9CA1A9}
 .form .btn-arrow {width: 50px;height: 50px;position: absolute;right:10px;top:0;bottom: 0;margin: auto;background: url("../images/icon-btn-arrow.png") no-repeat;
 border: 0;outline: none;font-size: 0;background-size: 100%;}
-footer .mail, footer .phone {color:#90B2C8;font-size: 1.125rem;display: flex;align-items: center;justify-content: flex-end;}
-footer .mail::before {width: 42px;height: 31px;background: url("../images/icon-mail.png") no-repeat;}
+footer .mail, footer .phone {color:#90B2C8;display: flex;align-items: center;justify-content: flex-end;}
+footer .mail::before {width: 38px;height: 35px;background: url("../images/icon-mail.png") no-repeat;}
 footer .phone::before {width: 33px;height: 31px;background: url("../images/icon-phone.png") no-repeat;}
 footer .phone::before, footer .mail::before {content: "";display: block;margin-right: 10px;}
 footer a:hover {opacity: .7;}
@@ -222,7 +222,8 @@ footer a:hover {opacity: .7;}
 .opened-mobil-menu #mobil-menu span:nth-child(3) { top: 9px; transform: rotate(-135deg); }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {padding-right: var(--bs-gutter-x,1.2rem);
 padding-left: var(--bs-gutter-x,1.2rem)}
-
+.shine {transition: all .2s ease;}
+.shine:hover {filter: drop-shadow(0px 0px 70px white);}
 
 
 /*responsive*/
@@ -283,7 +284,11 @@ background-color: #004D9A;height: 100%;z-index: 90;justify-content:flex-start;pa
 .step-list-area .icon::before {background-size: 60%;}
 .step-list-area .slick-list {padding-bottom: 50px !important;}
 .invest-now, .question-area-group, .team, .benefits, .raising-with-ascender .bg {padding: 2rem 0;}
-
+footer .mail, footer .phone {justify-content: flex-start;}
+footer .top-list {flex-direction: column;}
+footer .top-list li + li {margin-top: 25px;}
+.team ul {padding: 0;grid-gap: 20px;}
+.team li img {width: 130px;height: 130px;}
 
 }
 
@@ -305,14 +310,10 @@ background-color: #004D9A;height: 100%;z-index: 90;justify-content:flex-start;pa
 .category {display: grid;grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));}
 .category li {margin:5px !important;flex:1;}
 .question-area-group .category a {min-height: 40px;min-width: 70px;max-width: inherit;}
-.team ul {padding: 0;grid-gap: 20px;}
 .boxes .box::before {font-size: 3rem;top:-30px}
 h3 {font-size: 2.1rem;}
 h4 {font-size: 1.6rem;}
-footer .top-list {flex-direction: column;}
-footer .top-list li + li {margin-top: 25px;}
-footer .mail, footer .phone {justify-content: flex-start;}
-.team li img {width: 130px;height: 130px;}
+
 
 }
 
