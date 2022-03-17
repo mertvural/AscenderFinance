@@ -229,7 +229,7 @@ padding-left: var(--bs-gutter-x,1.2rem)}
 
 @media (max-height: 800px){
 
-.pyramid {transform: scale(.6);height:564px;}
+.pyramid {transform: scale(.6);height:564px}
 
 }
 
