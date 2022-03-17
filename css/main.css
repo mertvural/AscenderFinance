@@ -214,14 +214,14 @@ footer a:hover {opacity: .7;}
 .pyramid .deactive svg {filter: drop-shadow(0 -17px 12px rgba(255, 255, 255, .1));}
 #mobil-menu {width:30px; height: 22px; position: relative; transform: rotate(0deg); transition: .5s ease-in-out; cursor: pointer;z-index: 100;}
 #mobil-menu span { display: block; position: absolute; height: 2px; width: 100%; background: #fff; opacity: 1; left: 0; transform: rotate(0deg); transition: .25s ease-in-out; }
-#mobil-menu span:nth-child(1) { top: 0px; }
-#mobil-menu span:nth-child(2) { top: 10px; }
-#mobil-menu span:nth-child(3) { top: 20px; }
+#mobil-menu span:nth-child(1) { top: 0px}
+#mobil-menu span:nth-child(2) { top: 10px}
+#mobil-menu span:nth-child(3) { top: 20px}
 .opened-mobil-menu #mobil-menu span:nth-child(1) { top: 9px; transform: rotate(135deg); }
 .opened-mobil-menu #mobil-menu span:nth-child(2) { opacity: 0; left: -60px; }
 .opened-mobil-menu #mobil-menu span:nth-child(3) { top: 9px; transform: rotate(-135deg); }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {padding-right: var(--bs-gutter-x,1.2rem);
-padding-left: var(--bs-gutter-x,1.2rem);}
+padding-left: var(--bs-gutter-x,1.2rem)}
 
 
 
