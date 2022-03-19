@@ -3,13 +3,17 @@ $(function () {
     //accordion
     (function () {
         var question = $(".question .title"),
-            category = $(".category a");
+            category = $(".category a"),
+            benefitTitle = $(".benefits .item > .title");
         question.on("click", function () {
             var $this = $(this);
             $this.parent(".question").toggleClass("active").parent(".item").siblings().find(".question").removeClass("active")
             $this.next(".desc").slideToggle().parents(".item").siblings().find(".desc").slideUp()
         })
 
+        benefitTitle.on("click", function() {
+            $(this).next(".question").children(".title").trigger("click")
+        })
 
         category.on("click", function (e) {
             e.preventDefault();
@@ -30,6 +34,11 @@ $(function () {
     //aos
     (function () {
         AOS.init();
+        var btnClose = $(".close-info-box"),
+            infoBox = $(".info-box");
+        btnClose.on("click", function() {
+            infoBox.addClass("closed")
+        })
     })(),
 
     //step slick
