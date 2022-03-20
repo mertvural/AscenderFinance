@@ -74,6 +74,7 @@ flex-direction: column;animation: rotatingBack 20s linear infinite;}
 .question.active {background-color: #fff;border-radius: 0 40px 40px 40px;}
 .question.active .title {color:#004D9A;border-left-color: #004D9A;}
 .question .title {font-size: 1.125rem;font-weight: 700;border-left: 7px solid #879299;padding-left: 20px;margin-bottom: 20px;cursor: pointer;}
+.benefits .question:not(.active) .title {text-decoration: underline;}
 .question .desc {font-size: 13px;line-height: 2;padding-left: 27px;display: none;}
 .raising-with-ascender .bg {background: linear-gradient(180deg, #DEECF9, #F3F9FF);border-radius: 84px;padding:3rem 0;}
 .boxes .box .inner {background-color: #fff;border-radius: 130px 15px 15px 15px;position: relative;min-height: 194px;display: flex;align-items: center;
@@ -234,10 +235,11 @@ transition: opacity .2s ease;}
 @keyframes closedInfoBox {
     0% {transform: translateY(-10%);}
     50% {transform: translateY(-25%);}
-    100% {transform: translateY(100%);}
+    100% {transform: translateY(110%);}
 }
-
-
+.form-result {font-size: .95rem;padding-top: 2px}
+.text-success {color:#2AE1A2 !important}
+.text-danger {color:#F1466E !important}
 
 /*responsive*/
 

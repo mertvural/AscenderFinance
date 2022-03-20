@@ -970,11 +970,12 @@
                     <div class="row align-items-center">
                         <div class="col-lg-4 mb-5 mb-lg-0">
                             <h5>Gelişmelerden Haberdar Ol</h5>
-                            <form name="" method="">
+                            <form name="" method="" class="position-relative">
                                 <div class="form position-relative">
-                                    <input type="text" name="mail" class="form-control" placeholder="E-posta" />
-                                    <input type="submit" class="btn-arrow" />
+                                    <input type="text" name="email" class="form-control" id="email" placeholder="E-posta" required />
+                                    <button id="btn" class="btn-arrow">Validate</button>
                                 </div>
+                                <p class="form-result mb-0"></p>
                             </form>
                         </div>
                         <div class="col-lg-4 mb-5 mb-lg-0">
@@ -991,8 +992,9 @@
                         </div>
                         <div class="col-lg-2 text-start text-lg-end">
                             <h5 class="opacity-0 text-nowrap d-none d-lg-block">Eunomia</h5>
-                            <a href="https://www.eunomia.team/" target="_blank">
-                                <img src="images/logo-eunomia.png" alt="Designed by Eunomia"
+                            <a href="https://www.eunomia.team/" target="_blank" class="d-flex align-items-center">
+                                <span class="text-white pe-2"><small>Designed by</small></span>
+                                <img src="images/logo-eunomia.svg" alt="Designed by Eunomia"
                                     title="Designed by Eunomia" />
                             </a>
                         </div>
