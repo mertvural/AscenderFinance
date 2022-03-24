@@ -163,11 +163,11 @@ $(function () {
             button.addEventListener('click',(e)=>{
                 e.preventDefault()
                 if(validateEmail(email.value)){                    
-                  text.innerText="E-postanızı Başarıyla Kaydettik";
+                  text.innerText="We Have Successfully Saved Your Email";
                   text.classList.remove("text-danger")
                   text.classList.add("text-success")     
                 }else{                  
-                    text.innerText="Geçerli Bir E-posta Giriniz";    
+                    text.innerText="Enter a Valid Email";    
                     text.classList.remove("text-success")
                     text.classList.add("text-danger")           
                 }
