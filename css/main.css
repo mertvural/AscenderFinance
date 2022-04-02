@@ -184,7 +184,6 @@ footer {background: url("../images/footerbg.png") no-repeat;background-size: cov
 footer .top-list {border-bottom: 1px solid #020A16;padding-bottom: 35px;margin-bottom: 35px;display: flex;align-items: center;justify-content: space-between;
 flex-flow: row wrap;}
 footer .top-list a {color:#fff}
-footer .social {display: flex;align-items: center;justify-content: space-between;}
 footer .social a {text-indent: -9999px;width: 44px;height: 44px;background-repeat: no-repeat;display: block;font-size: 0;}
 footer .social a + a {margin-left: 10px;}
 footer .social a.linkedin {background-image: url("../images/icon-linkedin-circle.png");}
