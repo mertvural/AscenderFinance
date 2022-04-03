@@ -334,7 +334,7 @@ h4 {font-size: 1.6rem;}
 
 }
 
-@media (max-width: 1024px) , (min-height:769px){
+@media (max-width: 1200px) , (min-height:1024px){
 .slider-area > .container {min-height: inherit;}
 }
 
