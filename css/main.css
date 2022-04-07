@@ -32,7 +32,7 @@ h4 {font-size: 2.0625rem;}
 .what-is {background: url("../images/map.png") no-repeat center center;padding: calc(55px + 4.5rem) 0;overflow: hidden;background-size: contain;}
 .what-is p {color:#879299}
 .circle {width: 489px;height: 489px;background-color: #fff;border-radius: 50%;border:2px dashed #004D9A;filter:drop-shadow(0 0 20px rgba(0, 77, 154, .4));
-display: flex;align-items: center;justify-content: center;position: relative;margin: 0 auto;animation: rotating 20s linear infinite;}
+display: flex;align-items: center;justify-content: center;position: relative;margin: 0 auto;animation: rotating 40s linear infinite;}
 @keyframes rotating {
 from {
 transform: rotate(0deg);
@@ -50,10 +50,10 @@ transform: rotate(-360deg);
 }
 }
 .circle .circle-sm {width:261px;height: 259px;background: url("../images/circle.png") no-repeat;display: flex;align-items: center;justify-content: center;
-animation: rotatingBack 20s linear infinite;}
+animation: rotatingBack 40s linear infinite;}
 .circle .circle-sm h4 {color:#004D9A;text-align: center;margin: 0;}
 .circle-item {position: absolute;width: 120px;height: 120px;background-color: #004D9A;border-radius: 50%;display: flex;align-items: center;justify-content: center;
-flex-direction: column;animation: rotatingBack 20s linear infinite;}
+flex-direction: column;animation: rotatingBack 40s linear infinite;}
 .circle-item::after {content: attr(data-text);color:#fff;font-size: 11px;text-align: center;padding: 0 15px;line-height: 1.1;}
 .circle-item.icon::before {margin-bottom:5px;}
 .icon::before {content: "";background-repeat: no-repeat;background-position: center center;display: block;}
@@ -83,7 +83,7 @@ z-index: 1;padding: 60px 10px 0px 32px;font-size: .9rem;color:#707070}
 .boxes .box .icon {width: 76px;height: 76px;border-radius: 50%;filter: drop-shadow(0 0 20px rgba(0, 0, 0, .1));position:absolute;left:0;top:0;
 background-color: #fff;display: flex;align-items: center;justify-content: center;}
 .boxes {display: flex;flex-flow: row wrap;justify-content: center;}
-.boxes .box {position: relative;max-width: calc(25% - 30px);width: 100%;margin:5rem 15px 0px 15px;opacity: .1;}
+.boxes .box {position: relative;max-width: calc(33% - 30px);width: 100%;margin:5rem 15px 0px 15px;opacity: .1;}
 .icon.magnifier::before {width:38px;height:38px;background-image: url("../images/icon-magnifier.png");}
 .icon.idea::before {width:42px;height:42px;background-image: url("../images/icon-idea.png");}
 .icon.graph::before {width:46px;height:41px;background-image: url("../images/icon-graph.png");}
@@ -94,9 +94,9 @@ background-color: #fff;display: flex;align-items: center;justify-content: center
 .list-dotted {display: flex;flex-flow: row wrap;margin:0;padding: 0;}
 .list-dotted li {min-width: 50%;position: relative;display: flex;align-items: center;margin-top:7px;}
 .list-dotted li::before {content:"";width: 7px;height: 7px;background-color: #004D9A;border-radius: 50%;margin-right: 5px;}
-.boxes .box:nth-child(2), .boxes .box:nth-child(6) {margin-top: 7rem;}
-.boxes .box:nth-child(3), .boxes .box:nth-child(7) {margin-top: 9rem;}
-.boxes .box:nth-child(4), .boxes .box:nth-child(8) {margin-top: 11rem;}
+.boxes .box:nth-child(2), .boxes .box:nth-child(5) {margin-top: 7rem;}
+.boxes .box:nth-child(3), .boxes .box:nth-child(6) {margin-top: 9rem;}
+
 .investing {padding: 2rem 0;}
 .step-area {max-width: 1139px;margin: 70px auto 0 auto;}
 .stepper-wrapper {margin-top: 50px;display: flex;justify-content: space-between;margin-bottom: 20px;}
@@ -306,7 +306,7 @@ footer .top-list {flex-direction: column;}
 footer .top-list li + li {margin-top: 25px;}
 .team ul {padding: 0;grid-gap: 20px;}
 .team li img {width: 130px;height: 130px;}
-
+.boxes .box::before {font-size: 3rem;top:-30px}
 }
 
 @media (max-width:600px) {
@@ -327,7 +327,6 @@ footer .top-list li + li {margin-top: 25px;}
 .category {display: grid;grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));}
 .category li {margin:5px !important;flex:1;}
 .question-area-group .category a {min-height: 40px;min-width: 70px;max-width: inherit;font-size: 10px;}
-.boxes .box::before {font-size: 3rem;top:-30px}
 h3 {font-size: 2.1rem;}
 h4 {font-size: 1.6rem;}
 .info-box img {max-height: 40px;}
